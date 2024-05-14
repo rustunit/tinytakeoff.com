@@ -5,6 +5,7 @@
 
     
     
+    
 
     <style>
         body {
@@ -15,6 +16,21 @@
             color: white;
         }
 
+        p {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .banner {
             margin: 20px 0;
             width: 60%;
@@ -22,11 +38,24 @@
         }
 
         .download-btn {
-            background-color: #007aff;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
+            width: 200px;
+        }
+
+        .apple {
+            width: 100%;
+        }
+
+        .ru-link {
+            color: rgba(255, 255, 255, 0.3);
             text-decoration: none;
+        }
+
+        .ru-logo {
+            top: 25px;
+            left: 25px;
+            position: fixed;
+            width: 50px;
+            filter: invert(100);
         }
     </style>
 
@@ -36,13 +65,25 @@
 </head>
 
 <body>
-    <img src="assets/AppIcon.png" alt="Game Banner" class="banner">
-    <p>
-        The most thrilling mobile air race competition! Challenge the global air race champions and crown yourself the
-        tiny-takeoff winner!
-    </p>
-    <a href="https://apps.apple.com/app/your-game-id" class="download-btn">Download on the App Store</a>
+    <header>
+        <a href="https://rustunit.com"><img src="assets/logo.svg" class="ru-logo"></a>
+    </header>
+    <div class="main">
+        <img src="assets/AppIcon.png" alt="Game Banner" class="banner">
 
+        <p>
+            The most thrilling mobile air race competition! Challenge the global air race champions and crown yourself
+            the
+            tiny-takeoff winner!
+        </p>
+
+        <a href="https://apps.apple.com/app/tinytakeoff/id12345" class="download-btn">
+            <img src="assets/Apple-Download.svg" alt="iOS download" class="apple">
+        </a>
+    </div>
+    <footer>
+        <a href="https://rustunit.com" class="ru-link">Powered by 2024 Rustunit B.V.</a>
+    </footer>
 
 
 </body></html>
