@@ -40,6 +40,7 @@
         }
 
         .download-btn {
+            flex-grow: 1;
             /* width: 200px; */
             cursor: pointer;
         }
@@ -47,10 +48,14 @@
         .links {
             display: flex;
             gap: 20px;
-            max-width: 400px;
+            max-width: 600px;
         }
 
         .apple {
+            width: 100%;
+        }
+
+        .google {
             width: 100%;
         }
 
@@ -78,12 +83,11 @@
         <a href="https://rustunit.com"><img src="assets/logo.svg" class="ru-logo"></a>
     </header>
     <div class="main">
-        <img src="assets/AppIcon.png" alt="Game Banner" class="banner">
+        <img src="assets/Website-Icon.png" alt="Game Banner" class="banner">
 
         <p>
-            The most thrilling mobile air race competition! Challenge the global air race champions and crown yourself
-            the
-            tiny-takeoff winner!
+            Unlock Various Fluffy Flying Animal Superheroes and steer them through fantastic worlds. Compete against
+            sheep around the world and be the best in this unique challenge!
         </p>
 
         <!-- <a href="https://apps.apple.com/app/id6503081219" class="download-btn">
@@ -91,6 +95,9 @@
         </a> -->
 
         <div class="links">
+            <a href="https://play.google.com/store/apps/details?id=com.rustunit.tinytakeoff" class="download-btn">
+                <img src="assets/google-play.svg" alt="google play" class="google">
+            </a>
             <a href="https://testflight.apple.com/join/2iDfiVyQ" class="download-btn">
                 <img src="assets/Testflight.svg" alt="iOS testflight" class="apple">
             </a>
@@ -102,7 +109,6 @@
     <footer>
         <a href="https://rustunit.com" class="ru-link">Powered by 2024 Rustunit B.V.</a>
     </footer>
-
 
 
 </body></html>
