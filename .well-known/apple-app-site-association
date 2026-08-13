@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["4KX36F2LEW.com.rustunit.tinytakeoffgame"],
+        "components": [
+          {
+            "/": "*",
+            "?": { "replay": "?*" },
+            "comment": "A shared run: '?*' is one character followed by anything, so an empty ?replay= is not one. Everything else on this site stays in the browser."
+          }
+        ]
+      }
+    ]
+  }
+}

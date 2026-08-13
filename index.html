@@ -9,6 +9,17 @@
     <link data-trunk rel="copy-dir" href="assets/" />
     <link data-trunk rel="copy-file" href="CNAME" />
     <link data-trunk rel="copy-file" href="privacy.html" />
+    <!-- Universal links: iOS reads this once, at install, and it is what lets a
+         shared run's link open the game in the app instead of a browser. The game
+         and the ?replay= links it hands out live on web.tinytakeoff.com, which
+         serves its own copy out of the game repo; this claims the bare domain
+         too, so a link that ever points here behaves the same.
+
+         .nojekyll is not optional — GitHub Pages runs Jekyll over docs/, and
+         Jekyll drops every path starting with a dot, .well-known included. -->
+    <link data-trunk rel="copy-file" href=".well-known/apple-app-site-association"
+        data-target-path=".well-known" />
+    <link data-trunk rel="copy-file" href=".nojekyll" />
 
     <style>
         body {
