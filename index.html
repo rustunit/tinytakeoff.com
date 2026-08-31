@@ -9,6 +9,7 @@
     <link data-trunk rel="copy-dir" href="assets/" />
     <link data-trunk rel="copy-file" href="CNAME" />
     <link data-trunk rel="copy-file" href="privacy.html" />
+    <link data-trunk rel="copy-file" href="support.html" />
     <!-- Universal links: iOS reads this once, at install, and it is what lets a
          shared run's link open the game in the app instead of a browser. The game
          and the ?replay= links it hands out live on web.tinytakeoff.com, which
@@ -86,6 +87,18 @@
             text-decoration: none;
         }
 
+        .footer-links {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: underline;
+        }
+
         .ru-logo {
             top: 25px;
             left: 25px;
@@ -128,7 +141,15 @@
             </a>
         </div>
     </div>
+    <!-- Support and privacy are linked from here because they have to be
+         reachable, not merely hosted: Apple rejected the listing under guideline
+         1.5 for a Support URL that landed on this page with no way to ask anyone
+         anything (RU-405). The privacy policy had the same problem quietly. -->
     <footer>
+        <p class="footer-links">
+            <a href="support.html" class="ru-link">Support</a>
+            <a href="privacy.html" class="ru-link">Privacy</a>
+        </p>
         <a href="https://rustunit.com" class="ru-link">Powered by 2026 Rustunit</a>
     </footer>
 </body>
